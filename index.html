@@ -11,10 +11,24 @@
             cursor: crosshair;
         }
     </style>
-    <!-- script javascript labled in bottom -->
+    <!-- Include the script.js file -->
     <script src="script.js"></script>
 </head>
 <body>
     <canvas id="pixelCanvas" width="1000" height="1000"></canvas>
+
+    <!-- Include the moderation.php file -->
+    <?php include("moderation.php"); ?>
+
+    <!-- Sign-up Page -->
+    <div>
+        <h2>Sign Up</h2>
+        <form action="signup.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
 </body>
 </html>
